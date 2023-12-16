@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo-trungquandev-transparent-bg-256x256-ico.ico">
+    <title>Đây là tiêu để của trang web</title>
+    <!-- <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 15px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: yellowgreen;
+        }
+
+        tr:nth-child(even) {
+            background-color: goldenrod;
+        }
+    </style> -->
+    <style>
+        .p1 {
+            color: blue;
+            background-color: tomato;
+            font-size: medium;
+        }
+
+        .p2 {
+            color: pink;
+            background-color: rgb(42, 163, 165);
+            font-size: small;
+        }
+
+        .p3 {
+            color: beige;
+            background-color: aquamarine;
+            font-size: smaller;
+        }
+
+        #p1 {
+            color: red;
+            background-color: yellow;
+            font-size: large;
+        }
+
+        #p2 {
+            color: grey;
+            background-color: black;
+            font-size: medium;
+        }
+
+        #p3 {
+            color: green;
+            background-color: brown;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Tiêu đề</h3>
+    <h1>đây là thẻ h1</h1>
+    <h2>đây là thẻ h2</h2>
+    <h3>đây là thẻ h3</h3>
+    <h4>đây là thẻ h4</h4>
+    <h5>đây là thẻ h5</h5>
+    <h6>đây là thẻ h6</h6>
+    <h1><small>đây là thẻ h1 nhưng bé hơn</small></h1>
+    <hr>
+    <h3>Đoạn văn bản</h3>
+    <p>đây là 1 đoạn văn bản nằm trong thẻ p</p>
+    <p>Một đoạn văn bản luôn bắt đầu trên một dòng mới dù viết liền</p>
+    <P>mỗi đoạn văn bản sẽ cách nhau 1 khoảng mặc định</P>
+    <p>để ngắt dòng không có khoảng cách ta dùng thẻ br<br>ví dụ
+    <p>
+    <P>thẻ hr dùng để kẻ một đường :</P>
+    <hr>
+    <h1>HTML style</h1>
+    <h3>chỉnh màu cho văn bản</h3>
+    <!-- code: <p style="color:....;"> đoạn văn bản</p> -->
+    <p style="color:blue;">Ví dụ</p>
+    <h3>chỉnh background cho văn bản</h3>
+    <!-- code: <p style="background-color:....;> đoạn văn bản</p> -->
+    <P style="background-color:rgb(0, 255, 247);">Ví dụ</P>
+    <h3>chỉnh font-size cho văn bản</h3>
+    <!-- code: <p style="font-size:...;"> đoạn văn bản</p> -->
+    <p style="font-size:40;"> Ví dụ</p>
+    <hr>
+    <h3>Formatting Elements</h3>
+    <p>để bôi đen một đoạn văn bản ta dùng thẻ b</p>
+    <!-- code: <b>...</b> -->
+    <b>ví dụ-thẻ này không tự xuống dòng</b>
+    <p>để bôi đen 1 đoạn văn bản quan trọng về mặt ngữ nghĩa dùng thẻ strong</p>
+    <!-- code: <strong>....</strong> -->
+    <p>để in nghiêng một đoạn văn bản ta dùng thẻ i</p>
+    <!-- code: <i>....</i> -->
+    <i>ví dụ-thẻ này không tự xuống dòng</i>
+    <p>để in nghiêng một đoạn văn bản quan trọng về mặt ngữ nghĩa dùng thẻ em</p>
+    <P>dùng thẻ mark để đánh dấu văn bản</P>
+    <!-- code: <mark>....</mark> -->
+    <mark>ví dụ thẻ này không tự xuống dòng</mark>
+    <p>đoạn văn bản ở trong thẻ del coi như bị xóa</p>
+    <!-- code: <del>....</del> -->
+    <del>ví dụ thẻ này không tự xuống dòng</del>
+    <p>để gạch dưới 1 đoạn văn bản dùng thẻ u</p>
+    <!-- code: <u>....</u> -->
+    <u>ví dụ thẻ này không tự xuống dòng</u>
+    <p>để đánh dấu một đoạn văn bản đã được chèn vào văn bản gốc ban đầu dùng thẻ ins</p>
+    <p>để ghi chỉ số dưới của văn bản dùng thẻ sub</p>
+    <p>ví<sub>dụ</sub>thẻ này không tư duống dòng</p>
+    <p>để ghi chỉ số trên cho văn bản dùng thẻ sup</p>
+    <p>ví <sup>dụ</sup>thẻ này không tự xuống dòng</p>
+    <p>để trích dẫn đoạn văn từ một nguồn nào đó ta dùng thẻ blockquote</p>
+    <blockquote>ví dụ</blockquote>
+    <p>để biểu diễn một trích dẫn ngắn được đặt trong dấu ngoặc kép thì dùng thẻ q</p>
+    <q>ví dụ và thẻ này không tự xuống dòng</q>
+    <p>để định nghĩa một chữ viết tắt dùng thẻ abbr</p>
+    <abbr tille="Ví dụ">Vd thẻ này cũng không tự xuống dòng</abbr>
+    <p>để ghi một địa chỉ nào đó dùng thẻ address</p>
+    <address>
+        -ví dụ<br>
+        -ví dụ
+        ....
+    </address>
+    <p>để ghi tên tiêu đề của một tác phẩm nào đó dùng thẻ cite</p>
+    <cite>ví dụ-thẻ này không tự xuống dòng</cite>
+    <p>để xác định hướng của văn bản dùng thẻ bdo</p>
+    <!-- code: <bdo dir="rtl">.....</bdo> -->
+    <bdo dir="rtl">Ví dụ</bdo>
+    <hr>
+    <h3>Links</h3>
+    <p>để chèn link ta dùng thẻ a</p>
+    <a href="https://www.youtube.com/watch?v=0dP7cdf-EgI">Ví dụ-đây là chèn links vào chữ ví dụ và đè lên tab ban
+        đầu</a><br>
+    <a href="https://tranhdecors.com/wp-content/uploads/edd/2023/09/Hinh-nen-Anime-nu-hoang-mat-xanh-biec.jpg"
+        target="_blank"><img src="/trungquandevlogo"> </a>
+    <p>các thuộc tính của target:
+        _self:mở trên cùng một trang web hiện tại<br>
+        _blank:mở trên một tab khác<br>
+        _parent: mở trong cái khung parent cha của nó <br>
+        _top: mở trong toàn bộ phần body của window<br>
+    </p>
+
+    <iframe src="./frames/frame_1.1.html" width="500px" height="300px" id="frame-1" name="frame-1"></iframe>
+    <p>có 2 kiểu link trong href là absolute-tuyệt đối và relative-tương đối</p>
+    <a href="https://trungquandev.com">Dạng phổ biến</a>
+    <a href="https://www.trungquandev.com">Dạng www.</a>
+    <br>
+    <a href="./index2.html">Trỏ tới một file index2.html trong dự án</a>
+    <a href="./frames/courses/mern-stack.html">Trỏ tới file mern-stack.html trong thư mục courses</a>
+    <br>
+    <p>Một số trường hopwk phổ biến khi làm việc với links</p>
+    <a href="mailto:trungquandev.official@gmail.com">Tự động mở phần mềm gửi mail trên máy tính</a><br>
+    <p>thuộc tính tille của link</p>
+    <a href="https://trungquandev.com" title="Blog chính thức của mình">Blog trungquandev.com</a><br>
+    <p>butten</p>
+    <button onclick="document.location='https://trungquandev.com'">Link tới blog của mình.</button><br>
+    <hr>
+    <h3>Ảnh</h3>
+    <img src="images/6-00654.webp" alt="Ảnh lấy từ thư mục">
+    <img src="https://trungquandev.com/wp-content/uploads/2023/08/transparent-main-avatar-circle-min-trungquandev-codetq@3x-Large.jpeg"
+        alt="Logo trang blog trungquandev.com" style="width: 500px; height: 300px;">
+    <h3>Map cho ảnh</h3>
+    <img src="images/lesson 10-img-map/01-original.jpeg" usemap="#my-img-map">
+    <map name="my-img-map">
+        <area shape="rect" coords="830,1766,1791,2126" title="Keyboard" href="lesson 10-img-map-content/keyboard.html">
+        <area shape="circle" coords="1217,1527,121" title="Airpod" href="lesson 10-img-map-content/airport.html">
+        <area shape="poly" coords="1910,1860,1907,2045,1944,2192,2046,2232,2143,2175,2146,2025,2106,1871,2024,1829"
+            title="Mouse" href="lesson 10-img-map-content/mouse.html">
+    </map>
+    <hr>
+    <h3>background-image</h3>
+    <p
+        style="background-image: url('images/Lesson11/5961609.jpg'); background-size:cover; background-attachment: scroll;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum
+    </p>
+    <hr>
+    <h3>Picture Element</h3>
+    <picture>
+        <source media="(min-width: 776px)" srcset="./images/lesson12/3.png">
+        <source media="(min-width: 480px)" srcset="./images/lesson12/2.png">
+        <img src="./images/lesson12/1.png">
+    </picture>
+    <hr>
+    <h3>audio</h3>
+    <audio controls autoplay muted loop preload="auto">
+        <source src="audio/Cô Ta .mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <audio controls preload="none">
+        <source src="audio/Cô Ta .mp3" type="audio/wav">
+    </audio>
+    <hr>
+    <h3>video</h3>
+    <video width="500px" controls autoplay muted playsinline>
+        <source src="video/03-720.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h3>Favicon</h3>
+    <hr>
+    <h3>Tables</h3>
+    <h4>part 1</h4>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>YouTube</th>
+        </tr>
+        <tr>
+            <td style="width:10px;">Trung Quân</td>
+            <td style="height:100px;">trungquandev.official@gmail.com</td>
+            <td>Trungquandev Official</td>
+        </tr>
+        <tr>
+            <td>Trung Quân</td>
+            <td>trungquandev.official@gmail.com</td>
+            <td>Trungquandev Official</td>
+        </tr>
+        <tr>
+            <td>Trung Quân</td>
+            <td>trungquandev.official@gmail.com</td>
+            <td>Trungquandev Official</td>
+        </tr>
+    </table>
+    <br> <br> <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Trung Quân</td>
+            <td>Trung Quân</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>trungquandev.official@gmail.com</td>
+            <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Youtube</th>
+            <td>Trungquandev Official</td>
+            <td>Trungquandev Official</td>
+        </tr>
+    </table>
+    <h4>part 2_merge ô</h4>
+    <h5>merge ngang</h5>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td style="width:10px;">Trung Quân</td>
+            <td style="height:20px;">Trung Quân</td>
+            <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Trung Quân</td>
+            <td>Trung Quân</td>
+            <td>Trungquandev Official</td>
+        </tr>
+        <tr>
+            <td>Trung Quân</td>
+            <td>Trung Quân</td>
+            <td>Trungquandev Official</td>
+        </tr>
+    </table>
+    <h5>merge dọc</h5>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Trung Quân</td>
+            <td>Trung Quân</td>
+        </tr>
+        <tr>
+            <td>Trung Quân</td>
+            <td>Trung Quân</td>
+        </tr>
+        <tr>
+            <th>Youtube</th>
+            <td>Trungquandev Official</td>
+            <td>Trungquandev Official</td>
+        </tr>
+    </table>
+    <h4>part 3_colgroup</h4>
+    <table width="100%">
+        <colgroup>
+            <col span="2" style="background-color: pink">
+            <col span="2" style="background-color: lightgreen">
+            <col span="2" style="background-color: rgb(238, 191, 144)">
+            <col span="1" style="background-color: rgb(238, 144, 149)">
+        </colgroup>
+        <tr style="text-align: left">
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THUR</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>CN</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>List</h3>
+    <h4>danh sách không sắp xếp</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+    <h4>danh sách có sắp xếp</h4>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ol>
+    <h4>danh sách dạng mô tả</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Pure black</dd>
+        <dt>Tea</dt>
+        <dd>Shan Tuyet</dd>
+    </dl>
+    <h4>Nested Lists</h4>
+    <ul>
+        <li>Coffee
+            <ul>
+                <li>đường</li>
+                <li>đá</li>
+                <li>đen</li>
+            </ul>
+        </li>
+    </ul>
+    <ol>
+        <li>Tea
+            <ol>
+                <li>ô long</li>
+                <li>chanh</li>
+                <li>đá</li>
+            </ol>
+        </li>
+    </ol>
+    <h4>tạo kiểu cơ bản cho list</h4>
+    <ul style="list-style-type: square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+    <ol type="I" start="5">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ol>
+    <h3>class và id</h3>
+    <h4>class</h4>
+    <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa eius vitae modi a! Reprehenderit hic
+        fugiat officia ducimus voluptates ut, dicta nam asperiores magni natus, sequi, et sunt incidunt illo.'</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio dolores officiis ex adipisci
+        qui? Reiciendis quos nihil vel corporis laudantium. In exercitationem perferendis assumenda autem sequi eum
+        ullam numquam.</p>
+    <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto hic ipsam impedit, quam iure
+        tenetur consequuntur assumenda ipsa! Dolorem autem cupiditate veniam dicta tempore optio architecto officia
+        labore veritatis!</p>
+    <h4>id</h4>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui et corporis quibusdam possimus ratione,
+        facere modi earum blanditiis ad animi, natus quis, officia porro dolorem? Impedit mollitia illum cumque
+        doloribus.</p>
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quibusdam, sapiente ea dolorem velit
+        labore earum voluptate dolores ullam exercitationem dolor provident necessitatibus quam quae perferendis. Sint,
+        aperiam. Earum, temporibus!</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore numquam excepturi tempore,
+        incidunt commodi aliquam dolorem adipisci, dignissimos distinctio eius aperiam obcaecati, ea eos veniam
+        similique expedita? Eos, autem.</p>
+    <hr>
+    <h3>iframe</h3>
+    <iframe name="HIT ME UP_iframe" width="500px" height="400px"></iframe>
+    <p><a href="https://www.youtube.com/watch?v=r7WaK3uR7aQ&list=RDr7WaK3uR7aQ&start_radio=1"
+            target="HIT ME UP_iframe">hit me up</a></p>
+    <iframe src="https://www.youtube.com/" title="Test Iframe"></iframe>
+    <hr>
+    <h3>emojis</h3>
+    <div> &#9749; &#9200; </div>
+    <hr>
+    <iframe width="560" height="315" title="Trungquandev MERN Stack" frameborder="0" allowfullscreen
+        src="https://www.youtube.com/embed/63opfUkPq6k?controls=1&loop=1">
+    </iframe>
+</body>
+
+
+</html>
