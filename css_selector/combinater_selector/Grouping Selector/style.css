@@ -18,3 +18,6 @@ h2,
 .demo {
     font-style: italic;
 }
+.demo.demo2{
+    color: brown;
+}

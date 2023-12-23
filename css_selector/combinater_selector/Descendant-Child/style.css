@@ -1,0 +1,9 @@
+/* tá động đến toàn bộ thẻ p trong thẻ h1 */
+h1 p{
+    color:pink;
+    text-transform: uppercase;
+}
+/* tác động đến con trực tiếp của thẻ h1 */
+h1>p{
+    font-style:italic;
+}

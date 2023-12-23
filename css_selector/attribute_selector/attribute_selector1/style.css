@@ -1,0 +1,10 @@
+[href]{
+    color:red;
+    font-style: italic;
+}
+p[href]{
+    color:blue;
+}
+[target="_self"]{
+    text-transform: uppercase;
+}

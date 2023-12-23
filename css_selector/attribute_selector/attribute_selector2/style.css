@@ -1,0 +1,25 @@
+/* tác động đến thẻ có từ Trần */
+[title~="Trần"] {
+    text-transform: uppercase;
+}
+
+/* tác động đến thẻ có chuỗi Trần */
+[title*="Trần"] {
+    color: rgb(226, 113, 43);
+}
+
+/* Tác động đến title bắt đầu bằng từ Trần hoặc Trần-
+Tại sao Trần lại không được?????????????????????????*/
+[title|="Trần"] {
+    font-style: italic;
+}
+
+/* tác động đến title bắt đầu bằng chuỗi Trần */
+[title^="Trần"] {
+    font-size: xx-large;
+}
+
+/* tác động đến thẻ kết thúc bằng chuỗi hoặc từ toản */
+[title$="toản"] {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

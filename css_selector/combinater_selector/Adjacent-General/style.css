@@ -1,0 +1,11 @@
+/* chọn thẻ ngay sau một thẻ */
+.demo2+h1{
+    color:blue;
+}
+h1+h2{
+    color: brown;
+}
+/* chọn tất cả thẻ sau một thẻ */
+p~p{
+    font-style: italic;
+}
