@@ -1,0 +1,31 @@
+/* thay đổi trạng thái khi di chuột qua */
+#dichuot:hover {
+    color: aquamarine;
+}
+
+/* thay đổi trạng thái khi click hoặc giữ chuột */
+#link1:active {
+    font-size: larger;
+}
+
+/* thay đổi mày mặc định của link trước khi click */
+.click_me:link {
+    color: violet;
+}
+
+/* thay đổi mày mặc định của link sau khi click */
+.click_me:visited {
+    color: rgb(60, 0, 255);
+}
+
+/* chọn các thẻ không có nội dung */
+.div_1:empty {
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+}
+
+/* chọn thẻ có id="..." khi trên url có hash tương ứng */
+h2:target {
+    color: blueviolet;
+}

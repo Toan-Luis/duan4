@@ -1,0 +1,18 @@
+/* universal selector */
+*{
+    color:red !important;
+}
+/* element selector */
+h1{
+    color:blue;
+}
+/* class-pseudo classes */
+.theh1{
+    color:green;
+}
+/* id */
+#theh1{
+    color:yellow;
+}
+/* css nội tuyến */
+/* nếu thêm  !important vào thì lập tức sẽ là mạnh nhất */

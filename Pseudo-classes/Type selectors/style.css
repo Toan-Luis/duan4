@@ -1,0 +1,18 @@
+/* tác động đến một loại thẻ và là con đầu tiên */
+p:first-of-type{
+    color:blueviolet;
+}
+/* tác động đến một loại thẻ và là con cuối cùng */
+p:last-of-type{
+    color:pink;
+}
+/* chọn một loại thẻ con thứ n từ trên xuống 
+nếu muốn tác động theo số chẵn thì dùng even,lẻ thì dùng odd
+có thể thay số bằng 1 biểu thức như (3n+1)*/
+p:nth-of-type(2){
+    font-size: 50px;
+}
+/* chọn một loại thẻ là con duy nhất */
+u:only-of-type{
+    text-transform: uppercase;
+}

@@ -1,0 +1,21 @@
+/* tạo kiểu cho thẻ con đầu tiên */
+p:first-child{
+    color:blue;
+    text-transform: uppercase;
+}
+/* tạo kiểu cho phần tử con cuối cùng */
+p:last-child{
+    color:red;
+}
+/* chọn thẻ con thứ n từ trên xuống 
+nếu muốn tác động theo số chẵn thì dùng even,lẻ thì dùng odd
+có thể thay số bằng 1 biểu thức như (3n+1)
+nếu muốn nhảy từ dưới lên thì dùng nth-last-child()*/
+p:nth-child(2){
+    color:blueviolet;
+}
+/* nếu muốn chọn con duy nhất(tức là có một thẻ duy nhất) 
+lưu ý:con duy nhất cũng là con cuối cùng và đầu tiên*/
+p:only-child{
+    font-size: 30px;
+}

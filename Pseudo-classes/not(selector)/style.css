@@ -1,0 +1,9 @@
+/* áp dụng cho tất cả các thẻ có class là ...trừ... 
+có thể áp dụng cho tất cả các bộ chọn đã học*/
+.class1:not(h3){
+    font-size: 30px;
+}
+.class1:not(:first-of-type){
+    color:brown;
+}
+/* ví dụ:loại trừ loại thẻ con đầu tiên */
