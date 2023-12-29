@@ -21,9 +21,10 @@
     /* dãn trên-phải-dưới-trái(theo chiều kim đông hồ) */
     padding: 40px 30px 20px 10px;
 }
-.border{
+
+.border {
     background-color: blue;
-    color:azure;
+    color: azure;
     width: 200px;
     height: 200px;
     /* thay đổi các thông số của border */
@@ -50,11 +51,12 @@
     /* thay đổi kiểu viền,có thể thay đổi style cho từng viền khác nhau:border-(left)-style:..;*/
     border-style: dotted;
     /* thay đổi màu cho viền */
-    border-color:aquamarine;
+    border-color: aquamarine;
 }
-.border-radius{
+
+.border-radius {
     background-color: rgb(192, 18, 120);
-    color:azure;
+    color: azure;
     width: 200px;
     height: 200px;
     border: 5px solid red;
@@ -76,11 +78,12 @@
     /* bo trên trái-trên phải-dưới phải-dưới trái(theo chiều kim đồng hồ) */
     border-radius: 80px 70px 60px 50px;
 }
-.margin{
+
+.margin {
     width: 200px;
     height: 200px;
     background-color: blueviolet;
-    color:white;
+    color: white;
     /* chỉnh các thông số cơ bản (giống với padding),có thể dùng số âm để đẩy các phần tử lại gần*/
     /* cách cả 4 hướng:m20 */
     margin: 20px;
@@ -93,36 +96,67 @@
     /* cách dưới:mgbot */
     margin-bottom: 20px;
 }
+
 /* margin-collap xảy ra với 2 phần tử nằm theo chiều dọc có margin hướng vào nhau 
 khi đó sẽ lấy margin lớn hơn.Đối với chiều ngang vẫn cộng với nhau bình thường*/
-.margin-collap{
-    height: 200px;width: 200px;
+.margin-collap {
+    height: 200px;
+    width: 200px;
     background-color: rgb(36, 189, 12);
     border: 10px solid violet;
 }
-.margin-collap1{
-    margin-bottom:50px;
+
+.margin-collap1 {
+    margin-bottom: 50px;
 }
-.margin-collap2{
+
+.margin-collap2 {
     margin-top: 70px;
 }
+
 /* có thể xử lý vấn đề này bằng cách thêm thuộc tính display: flex; và flex-direction:column; vào thẻ cha của nó*/
-.margin-collap-f{
+.margin-collap-f {
     display: flex;
     flex-direction: column;
 }
+
 /* margin-collap cũng có thể xảy ra với thẻ cha con có margin cùng chiều */
-.box_child{
+.box_child {
     width: 50%;
     background-color: #980d0d;
     margin-top: 80px;
     /* thêm margin ở đây nhưng cả phần cha bị đẩy xuống 80px */
 }
-.box_parent{
+
+.box_parent {
     height: 200px;
     background-color: rgb(213, 137, 23);
     margin-top: 50px;
     /* để khắc phục: */
     display: flex;
     flex-direction: column;
+}
+
+.outline {
+    height: 200px;
+    width: 200px;
+    border: 10px solid red;
+    margin: 20px;
+    /* cách chỉnh thông số của outline
+    Lưu ý:outline không thể code từng cạnh giống như padding hay border */
+    outline: 25px solid blue;
+    /* để outline cách border một khoảng thì dùng outline-offset */
+    outline-offset: 10px;
+}
+.box{
+    height: 200px;
+    width: 100px;
+    border: 10px solid red;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+.box2{
+
+    box-sizing: border-box;
 }
