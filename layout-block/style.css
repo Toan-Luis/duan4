@@ -1,0 +1,17 @@
+body{
+    width: 500px;
+}
+.block1{
+    width: 400px;
+}
+/* có một số thuộc tính css sẽ không áp dụng được với display-inline như padding-top
+ padding-botten,margin-top,margin-botten,width,height,min-width,min-height */
+.inline1{
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+}
+/* muốn thẻ có thuộc tính inline áp dụng được các thuộc tính trên thì cần thêm display:inline-block */
+.inline1{
+    display: inline-block;
+}

@@ -148,7 +148,8 @@ khi đó sẽ lấy margin lớn hơn.Đối với chiều ngang vẫn cộng v�
     /* để outline cách border một khoảng thì dùng outline-offset */
     outline-offset: 10px;
 }
-.box{
+
+.box {
     height: 200px;
     width: 100px;
     border: 10px solid red;
@@ -156,7 +157,8 @@ khi đó sẽ lấy margin lớn hơn.Đối với chiều ngang vẫn cộng v�
     padding: 20px;
     box-sizing: content-box;
 }
-.box2{
 
+.box2 {
+    /* kích thước phần tử sẽ cố định */
     box-sizing: border-box;
 }

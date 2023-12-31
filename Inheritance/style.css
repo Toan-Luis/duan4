@@ -1,0 +1,8 @@
+/* các thẻ con sẽ thừa hưởng một số thuộc tính css từ thẻ cha */
+.inheritance{
+    font-style:italic;
+    color:blueviolet;
+    font-size: 30px;
+    /* các thuộc tính kế thừa chủ yếu liên quan đến văn bản như:
+    font-family,font-size,font-weight,font-style,color,test-align,line-height,... */
+}
