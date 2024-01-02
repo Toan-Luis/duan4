@@ -1,0 +1,44 @@
+.pixel{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.percent{
+    width: 50%;
+    /* chiều dài là 50% thẻ cha của nó */
+    background-color: #d21010;
+}
+.vh_vw{
+    width: 50vw;
+    /* dài bằng 50% khung nhìn hiện tại */
+    height: 90vh;
+    /* cao bằng 00% khung nhìn hiện tại */
+    background-color: blueviolet;
+}
+/* dài và cao bằng n lần font-size hiện tại của chính nó(có kế thừa)*/
+.em1{
+    /* font-size mặc định của hầu hết trình duyệt là 16 */
+    width: 10em;
+    height: 10em;
+    background-color: aqua;
+}
+.set{
+    font-size: 30px;
+}
+.em2{
+    width: 10em;
+    height: 10em;
+    background-color: rgb(9, 113, 21);
+}
+.set2{
+    font-size: 40px;
+}
+.em3{
+    font-size: 50px;
+    width: 10em;
+    height: 10em;
+    background-color: black;
+    /* ở đây đã có font-size là 50px nên sẽ lấy theo 50px */
+}
+/* nếu thẻ cha có kích thước tương đối thì thẻ cha sẽ lấy fon-size mặc định 
+và thẻ con sẽ tiếp tục kế thừa */

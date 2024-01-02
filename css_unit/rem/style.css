@@ -1,0 +1,12 @@
+.rem1{
+    width: 2rem;
+    height: 2rem;
+    /* chiều rộng và chiều cao bằng 2 lần font-size mặc định của trình duyệt(không kế thừa) */
+    background-color: aqua;
+    border:0.3rem solid red;
+}
+/* ta có thể kiểm soát toàn bộ trang web bằng cách thay đổi cỡ chữ mặc định */
+html{
+    font-size:62.5%;
+    /* nên để 62,5% để quy đổi 1rem thành 10px */
+}
