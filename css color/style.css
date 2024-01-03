@@ -1,12 +1,29 @@
-.rgb{
+.rgb {
     color: rgb(100, 50, 75)
 }
-.rgba{
+
+.rgba {
     color: rgba(0, 70, 40, 0.5)
 }
-.thaplucphan{
+
+.thaplucphan {
     background-color: #bb00aa;
 }
-.goitenmau{
-    color:darkcyan;
+
+.goitenmau {
+    color: darkcyan;
+}
+
+.currentColor1 {
+    color: #19e90a;
+    width: 100px;
+    height: 100px;
+    /* currentColor sẽ lấy màu ở color hiện tại */
+    border: 10px solid currentColor;
+}
+
+.currentColor2 {
+    /*color có tính kế thừa */
+    background-color: currentColor;
+    /* ở đây,vì .currentcColor là con của .currentColor1 nên sẽ kế thừa màu ở đó*/
 }
