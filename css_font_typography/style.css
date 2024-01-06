@@ -1,0 +1,108 @@
+/* sử dụng system fonts có sẵn trên hệ điều hành sẽ làm tăng hiệu suất,đẩy nhanh tốc độ tải trang */
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* tên font có dấu cách phải thêm dấu nháy kép hoặc đơn */
+}
+
+/* nhúng font sẽ giúp bất cứ máy nào của khách hàng cũng hiển thị giống nhau.Kể cả trường hợp máy khách không cài đặt font chữ này. */
+p {
+    font-family: 'Inter', sans-serif;
+    /* nên để font back-up là kiểu font cùng với font chính */
+}
+
+h2 {
+    font-family: 'Roboto Serif', serif;
+}
+
+/* ban đầu .font-weight của chữ bình thường sẽ là 400 */
+/* chỉnh sửa độ dày trực tiếp */
+.font-weight {
+    font-weight: 800;
+}
+
+/* chỉnh sửa dày hơn 1 cấp */
+.font-weight {
+    font-weight: bolder;
+}
+
+/* chỉnh sửa mỏng hơn 1 cấp */
+.font-weight {
+    font-weight: lighter;
+}
+
+.line-height {
+    line-height: 1.5;
+    /* dãn bằng 1.5 lần font-size hiện tại.không nên để dãn dòng là cố định vì khi thay đổi có thể làm chữ dính vào nhau */
+}
+
+.can {
+    height: 200px;
+    background-color: blue;
+    line-height: 200px;
+    /* cách trên 100 cộng với cách dưới của dòng trên là thành 200 */
+}
+
+.letter-spacing {
+    letter-spacing: 10px;
+    /* khoảng cách giữa các ký tự là 10px */
+}
+
+.word-spacing {
+    word-spacing: 10px;
+    /* khoảng cách giữa các từ là 10px */
+}
+.text-align{
+    text-align: left;
+    /* căn trái(mặc định) */
+    text-align: right;
+    /* căn phải */
+    text-align: center;
+    /* căn giữa nhưng chỉ căn giữa so với box chứa nó*/
+    text-align: justify;
+    /* căn đều 2 bên */
+}
+.text-decoration{
+    text-decoration: none;
+    /* bỏ gạch chân */
+    text-decoration: underline;
+    /* thêm gạch chân */
+    text-decoration: line-through;
+    /* thêm gạch ngang */
+    text-decoration: overline;
+    /* gạch trên đầu */
+    /* có thể dùng 2 loại gạch */
+    text-decoration: line-through overline;
+    /* định kiểu cho vạch kiểu vạch-màu sắc-kích thước*/
+    text-decoration: underline dotted red 5px ;
+}
+.indent{
+    text-indent: -40px;
+    /* thụt trái */
+    text-indent: 40px;
+    /* thụt phải */
+}
+.transform{
+    text-transform: uppercase;
+    /* viết hoa toàn bộ */
+    text-transform: lowercase;
+    /* viết thường toàn bộ */
+    text-transform: capitalize;
+    /* viết hoa tất cả chữ cái đầu */
+}
+.space{
+    white-space: normal;
+    /* trạng thái mặc định */
+    white-space: nowrap;
+    /* không xuống dòng kể cả chạm lề */
+    white-space: pre;
+    /* định dạng như khi code nhưng hết câu mới xuống dòng*/
+    white-space: pre-line;
+    /* giứ dấu xuống dòng */
+    white-space: pre-wrap; 
+    /* giữ nguyên định dạng code nhưng gặp lề thì xuống dòng */
+}
+.wb{
+    background-color: yellow;
+    word-break: break-all;
+    /* thông thường chữ sẽ kéo dài ra khổi khối nhưng word-break:break-all sẽ bẻ gãy từ để giữ giao diện không bị vỡ */
+}
