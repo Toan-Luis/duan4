@@ -106,3 +106,20 @@ h2 {
     word-break: break-all;
     /* thông thường chữ sẽ kéo dài ra khổi khối nhưng word-break:break-all sẽ bẻ gãy từ để giữ giao diện không bị vỡ */
 }
+.tsd{
+    text-shadow: 40px -40px 2px blue;
+    /* đổ về bên phải 40px - lên trên 40px - độ mờ 2px - màu xanh */
+}
+.ovf{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    overflow: visible;
+    /* (default) hiện thị nội dung vượt box */
+    overflow: hidden;
+    /* ẩn nội dung vượt box */
+    overflow: scroll;
+    /* tạo thanh cuộn và luôn hiển thị thanh cuộn */
+    overflow: auto;
+    /* nếu thừa tự tạo thanh cuộn */
+}
