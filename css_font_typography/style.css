@@ -51,7 +51,8 @@ h2 {
     word-spacing: 10px;
     /* khoảng cách giữa các từ là 10px */
 }
-.text-align{
+
+.text-align {
     text-align: left;
     /* căn trái(mặc định) */
     text-align: right;
@@ -61,7 +62,8 @@ h2 {
     text-align: justify;
     /* căn đều 2 bên */
 }
-.text-decoration{
+
+.text-decoration {
     text-decoration: none;
     /* bỏ gạch chân */
     text-decoration: underline;
@@ -73,15 +75,17 @@ h2 {
     /* có thể dùng 2 loại gạch */
     text-decoration: line-through overline;
     /* định kiểu cho vạch kiểu vạch-màu sắc-kích thước*/
-    text-decoration: underline dotted red 5px ;
+    text-decoration: underline dotted red 5px;
 }
-.indent{
+
+.indent {
     text-indent: -40px;
     /* thụt trái */
     text-indent: 40px;
     /* thụt phải */
 }
-.transform{
+
+.transform {
     text-transform: uppercase;
     /* viết hoa toàn bộ */
     text-transform: lowercase;
@@ -89,7 +93,8 @@ h2 {
     text-transform: capitalize;
     /* viết hoa tất cả chữ cái đầu */
 }
-.space{
+
+.space {
     white-space: normal;
     /* trạng thái mặc định */
     white-space: nowrap;
@@ -98,19 +103,22 @@ h2 {
     /* định dạng như khi code nhưng hết câu mới xuống dòng*/
     white-space: pre-line;
     /* giứ dấu xuống dòng */
-    white-space: pre-wrap; 
+    white-space: pre-wrap;
     /* giữ nguyên định dạng code nhưng gặp lề thì xuống dòng */
 }
-.wb{
+
+.wb {
     background-color: yellow;
     word-break: break-all;
     /* thông thường chữ sẽ kéo dài ra khổi khối nhưng word-break:break-all sẽ bẻ gãy từ để giữ giao diện không bị vỡ */
 }
-.tsd{
+
+.tsd {
     text-shadow: 40px -40px 2px blue;
     /* đổ về bên phải 40px - lên trên 40px - độ mờ 2px - màu xanh */
 }
-.ovf{
+
+.ovf {
     width: 200px;
     height: 200px;
     background-color: yellow;
@@ -122,4 +130,46 @@ h2 {
     /* tạo thanh cuộn và luôn hiển thị thanh cuộn */
     overflow: auto;
     /* nếu thừa tự tạo thanh cuộn */
+    overscroll-behavior: auto;
+    /* cuộn trang khi thanh cuộn trong box tới hạn */
+    overscroll-behavior: content;
+    /* không cuộn trang khi thanh cuộn trong box tới hạn*/
+}
+
+/* custom scrollbar */
+/* width (độ rộng)*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track (nền của thanh cuộn) */
+::-webkit-scrollbar-track {
+    background: #05938a;
+}
+
+/* Handle (nút cuộn)*/
+::-webkit-scrollbar-thumb {
+    background: #ae1010;
+}
+
+/* Handle on hover (các thay đổi của phím cuộn khi di chuột vào)*/
+::-webkit-scrollbar-thumb:hover {
+    background: #109d12;
+}
+.tov1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* để 3 chấm ở dòng thứ nhất */
+}
+.tov2{
+    background-color: goldenrod;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /* nếu muốn để 3 chấm ở dòng thứ 1 hay 3 thì chỉnh thành 2->1 or 3 */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
