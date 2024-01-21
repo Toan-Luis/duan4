@@ -1,7 +1,9 @@
+/* chọn thẻ h1 có class là demo */
 h1.demo{
     color:blue;
     text-transform: uppercase;
 }
+/* chọn thẻ h2 có class là demo */
 h2.demo{
     color:blueviolet;
     text-align: end;

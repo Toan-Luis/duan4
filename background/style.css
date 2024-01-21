@@ -1,0 +1,103 @@
+.bgc {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /* mặc định sẽ là transparent */
+    background-color: brown;
+    /* ngoài ra có thể áp dụng các cách nêu màu đã học */
+    /* nền sẽ đổ vào toàn bộ các phần tính kích thước của phần tử */
+    margin: 40px;
+    padding: 20px;
+    border: 5px dotted yellow;
+}
+
+.bgi {
+    height: 100vh;
+    background-image: none;
+    /* Ẩn hình nền */
+    background-image: url(./images/leaf-icon-png-7050.png), url(./images/2.jpg);
+    /* sử dụng nhiều ảnh thì cái nào đứng trước sẽ được sử dụng chèn lên cái sau */
+    /* đuôi png là đuôi trong suốt nên nhìn được nền */
+    /* vì thẻ div có display là block nên sẽ chiếm hết chiều ngang->ảnh lấp đầy chiều ngang */
+    /* ở trạng thái mặc định,hình ảnh sẽ được lặp vô hạn và chiếm hết kích thước của thẻ chứa nó */
+    background-repeat: no-repeat;
+    /* BG không lặp lại */
+    background-repeat: repeat-x;
+    /* lặp lại theo trục x */
+    background-repeat: repeat-y;
+    /* lặp lại theo trục y */
+    background-repeat: repeat;
+    /* lặp cả trục x và y(mặc định) */
+    /* việc lặp lại một hình ảnh nhỏ để tạo thành một bức ảnh lớn sẽ giúp giảm dung lượng và lượt tải từ trên hệ thống 
+    Thường được dùng để tạo ảnh nền vật liệu_texture background image*/
+}
+
+.bgs {
+    height: 300px;
+    width: 300px;
+    /* đây là kích thước của box chứa,không phải của ảnh */
+    background-image: url(./images/thuc-trang-o-nhiem-moi-truong-o-viet-nam-hien-nay-01.jpg);
+    /* Khi chưa điều chỉnh kich cỡ,ảnh sẽ hiển thị đúng với tỉ lệ 1:1 */
+    background-size: contain;
+    /* -ảnh vừa khung hình
+       -ảnh hiện thị với tỉ lệ 1:1
+       -Không bị mất hình
+       -nếu thừa khoảng trống ảnh sẽ bị lặp lại */
+    background-size: cover;
+    /* -ảnh vừa khớp khung hình
+       -Giữ nguyên tỉ lệ ảnh
+       -có thể bị mất hình
+       Không bị lặp ảnh */
+    background-size: 200px;
+    /* Chiều rộng của BG là 200px,thừa sẽ lặp lại*/
+    background-size: 100%;
+    /* chiều rộng bằng 100% box chứa nó */
+    background-size: 200px 200px;
+    /* chiều rộng của BG là 200px,chiều cao sẽ là 200px */
+    background-size: 100% 100%;
+    /* chiều rộng và chiều cao của BG là 100% box chứa nó */
+}
+.bgp{
+    height: 400px;
+    width: 400px;
+    background-image: url(https://tranhdecors.com/wp-content/uploads/edd/2023/09/Anh-nen-Anime-em-gai-mua.jpg);
+    background-position: top right;
+    /* lấy ảnh từ góc trên bên phải(kích thước sẽ bằng kích thước của hộp) */
+    background-position: top left;
+    /* lấy ảnh từ góc trên bên trái(kích thước sẽ bằng kích thước của hộp) */
+    background-position: bottom right;
+    /* lấy ảnh từ góc dưới bên phải(kích thước sẽ bằng kích thước của hộp) */
+    background-position: bottom left;
+    /* lấy ảnh từ góc dưới bên trái(kích thước sẽ bằng kích thước của hộp) */
+    background-position: center;
+    background-position: left;
+    background-position: top;
+    background-position: right;
+    background-position: bottom;
+}
+.lg{
+    height: 100px;
+    margin: 20px;
+}
+.lg1{
+    background-image: linear-gradient(to bottom,lightblue, rgb(212, 101, 101));
+    /*Đối số thứ nhất là hướng chuyển màu(màu sẽ chuyển từ hướng trái ngược với hướng chỉ định tới hướng chỉ định)
+    to bottom-từ trên xuống dưới(default)*/
+}
+.lg2{
+    background-image: linear-gradient(to top left,lightblue, rgb(212, 101, 101));
+    /* to top left từ góc dưới bên phải lên góc trên bên trái */
+   /* .... */
+}
+.lg3{
+    background-image: linear-gradient(lightblue 40%, rgb(212, 101, 101));
+    /* chuyển màu từ màu xanh đến đỏ và màu xanh không chuyển màu từ 0%->40% */
+    /* đối số thứ 2 là màu sắc color-stop
+    màu nào nhập trước sẽ xuất hiện đầu tiên
+    stop tức là % màu không chuyển màu*/
+}
+.lg4{
+    background-color: lightblue;
+    background-image: linear-gradient(to bottom,lightblue, rgb(212, 101, 101));
+    /* nên để một thuộc tính bgc để back-up nếu trình duyệt không hỗ tợ */
+}
